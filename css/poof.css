@@ -1,0 +1,8 @@
+.poof {
+	background: transparent url(../img/poof.png) no-repeat 0 0;
+	cursor: pointer;
+	display: none;
+	height: 32px;
+	position: absolute;
+	width: 32px;
+}

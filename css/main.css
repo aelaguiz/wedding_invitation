@@ -1,0 +1,108 @@
+body {
+	background-color: black;
+}
+
+.screen {
+	position: fixed;
+	width: 800px;
+	height: 600px;
+
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -400px;
+	border: solid 1px red;
+}
+
+.sprite {
+	background-image: url('/img/sprites.png');
+	display: none;
+	position: absolute;
+}
+
+.sprite.dot {
+	display: block;
+	background-position: -10px -369px;
+	width: 20px;
+	height: 21px;
+}
+
+.sprite.pacman {
+	background-position: -15px -52px;
+	width: 26px;
+	height: 28px;
+}
+
+.sprite.formal_pacman {
+	background-position: -92px -78px;
+	width: 32px;
+	height: 46px;
+}
+
+.sprite.formal_pacman.rotated {
+	/* for firefox, safari, chrome, etc. */
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	/* for ie */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.sprite.mrspacman {
+	background-position: -173px -12px;
+	width: 29px;
+	height: 30px;
+}
+
+.sprite.formal_mrspacman.rotated {
+	/* for firefox, safari, chrome, etc. */
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	/* for ie */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+.sprite.formal_mrspacman {
+	background-position: -133px -87px;
+	width: 38px;
+	height: 37px;
+}
+
+.text {
+	display: none;
+	background-image: url('/img/text.png');
+	width: 537px;
+	height: 500px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -263px;
+	margin-top: -250px;
+	cursor: pointer;
+}
+
+.rsvp {
+	display: none;
+	position: absolute;
+	margin-left: -380px;
+	left: 50%;
+}
+
+.sitelink {
+	position: absolute;
+	right: 5px;
+	top: 20px;
+	font-size: 10pt;
+	text-decoration: none;
+	color: red;
+	font-family: verdana;
+}
+
+.rsvplink {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 10pt;
+	text-decoration: none;
+	color: red;
+	font-family: verdana;
+}
